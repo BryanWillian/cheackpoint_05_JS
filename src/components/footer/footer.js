@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   text-align: center;
   font-size: 17px;
   padding: 20px 0;
-  margin-top: 850px; 
+  margin-top: 880px; 
 `;
 
 const Container = styled.div`
@@ -35,6 +35,12 @@ const Copyright = styled.div`
   margin-top: 20px;
 `;
 
+const StyledLink = styled.a`
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+`;
+
 const Footer = () => {
   return (
     <StyledFooter>
@@ -51,7 +57,12 @@ const Footer = () => {
           </Contact>
         </FooterContent>
         <Copyright>
-          <p>&copy; 2023 Nome da Sua Empresa. Todos os direitos reservados.</p>
+          <p>
+            &copy; 2023 Nome da Sua Empresa. Todos os direitos reservados.
+            <StyledLink href="">Home</StyledLink>
+            <StyledLink href="">Sobre Nós</StyledLink>
+            <StyledLink href="">Contato</StyledLink>
+          </p>
         </Copyright>
       </Container>
     </StyledFooter>
